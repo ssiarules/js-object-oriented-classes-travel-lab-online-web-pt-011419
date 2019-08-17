@@ -32,4 +32,12 @@ class Route {
     let verticalDiff = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
     return horizantalDiff + verticalDiff
   }
+
+  estimatedTime(peakTime){
+       if(peakTime){
+           return this.blocksTravelled()/2;
+       }else{
+           return this.blocksTravelled()/3;
+       }
+   }
 }
