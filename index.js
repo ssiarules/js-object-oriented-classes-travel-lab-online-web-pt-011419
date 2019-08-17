@@ -24,6 +24,12 @@ let eastWest = [
 
 class Route {
   constructor(beginningLocation, endingLocation){
-
+    this.beginningLocation = beginningLocation
+    this.endingLocation = endingLocation
+  }
+  blocksTravelled(){
+    let horizantalDiff = Math.abs(eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.horizontal))
+    let verticalDiff = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
+    return horizantalDiff + verticalDiff
   }
 }
