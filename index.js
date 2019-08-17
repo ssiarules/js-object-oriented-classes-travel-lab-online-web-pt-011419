@@ -1,5 +1,5 @@
-class Driver{
-  constructor(){
+class Driver {
+  constructor(name, startDate){
 
   }
 }
@@ -7,6 +7,6 @@ class Driver{
 
 class Route {
   constructor(){
-    
+
   }
 }
